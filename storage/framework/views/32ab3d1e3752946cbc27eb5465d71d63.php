@@ -1,6 +1,6 @@
 <v-flash-group ref='flashes'></v-flash-group>
 
-<?php if (! $__env->hasRenderedOnce('80af0dc0-73d2-4d41-a933-94aa27449ec5')): $__env->markAsRenderedOnce('80af0dc0-73d2-4d41-a933-94aa27449ec5');
+<?php if (! $__env->hasRenderedOnce('e6e39e15-a06f-4048-bb01-f80f237eaef8')): $__env->markAsRenderedOnce('e6e39e15-a06f-4048-bb01-f80f237eaef8');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-flash-group-template">
         <transition-group
@@ -14,7 +14,8 @@ $__env->startPush('scripts'); ?>
             leave-to-class="ltr:translate-x-full rtl:-translate-x-full"
             class='grid gap-[10px] fixed top-[20px] ltr:right-[20px] rtl:left-[20px] z-[1] justify-items-end'
         >
-            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+            <?php if (isset($component)) { $__componentOriginal1dfdfd11830daf01eb02e80c390cb7c1 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal1dfdfd11830daf01eb02e80c390cb7c1 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.flash-group.item','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::flash-group.item'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -24,9 +25,13 @@ $__env->startPush('scripts'); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?> <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal1dfdfd11830daf01eb02e80c390cb7c1)): ?>
+<?php $attributes = $__attributesOriginal1dfdfd11830daf01eb02e80c390cb7c1; ?>
+<?php unset($__attributesOriginal1dfdfd11830daf01eb02e80c390cb7c1); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal1dfdfd11830daf01eb02e80c390cb7c1)): ?>
+<?php $component = $__componentOriginal1dfdfd11830daf01eb02e80c390cb7c1; ?>
+<?php unset($__componentOriginal1dfdfd11830daf01eb02e80c390cb7c1); ?>
 <?php endif; ?>
         </transition-group>
     </script>

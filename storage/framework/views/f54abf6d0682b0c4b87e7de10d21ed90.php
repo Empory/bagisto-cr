@@ -58,7 +58,8 @@
 
         <div id="app" class="h-full">
             
-            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+            <?php if (isset($component)) { $__componentOriginal701f473bf36886c6d0b4697249a816f6 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal701f473bf36886c6d0b4697249a816f6 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.flash-group.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::flash-group'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -69,13 +70,18 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal701f473bf36886c6d0b4697249a816f6)): ?>
+<?php $attributes = $__attributesOriginal701f473bf36886c6d0b4697249a816f6; ?>
+<?php unset($__attributesOriginal701f473bf36886c6d0b4697249a816f6); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal701f473bf36886c6d0b4697249a816f6)): ?>
+<?php $component = $__componentOriginal701f473bf36886c6d0b4697249a816f6; ?>
+<?php unset($__componentOriginal701f473bf36886c6d0b4697249a816f6); ?>
 <?php endif; ?>
 
             
-            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+            <?php if (isset($component)) { $__componentOriginalc603f2743be5e84d3c165d2adaeaf950 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalc603f2743be5e84d3c165d2adaeaf950 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.modal.confirm','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::modal.confirm'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -86,16 +92,21 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginalc603f2743be5e84d3c165d2adaeaf950)): ?>
+<?php $attributes = $__attributesOriginalc603f2743be5e84d3c165d2adaeaf950; ?>
+<?php unset($__attributesOriginalc603f2743be5e84d3c165d2adaeaf950); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalc603f2743be5e84d3c165d2adaeaf950)): ?>
+<?php $component = $__componentOriginalc603f2743be5e84d3c165d2adaeaf950; ?>
+<?php unset($__componentOriginalc603f2743be5e84d3c165d2adaeaf950); ?>
 <?php endif; ?>
 
             <?php echo view_render_event('bagisto.shop.layout.content.before'); ?>
 
 
             
-            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+            <?php if (isset($component)) { $__componentOriginala93dc3cfd6b332ac9bf34de04284104e = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginala93dc3cfd6b332ac9bf34de04284104e = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.layouts.header.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::layouts.header'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -106,9 +117,13 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginala93dc3cfd6b332ac9bf34de04284104e)): ?>
+<?php $attributes = $__attributesOriginala93dc3cfd6b332ac9bf34de04284104e; ?>
+<?php unset($__attributesOriginala93dc3cfd6b332ac9bf34de04284104e); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginala93dc3cfd6b332ac9bf34de04284104e)): ?>
+<?php $component = $__componentOriginala93dc3cfd6b332ac9bf34de04284104e; ?>
+<?php unset($__componentOriginala93dc3cfd6b332ac9bf34de04284104e); ?>
 <?php endif; ?>
 
             <div
@@ -116,7 +131,8 @@
                 ref="appLayout"
             >
                 
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginaleadb7d7dc37b591b0ef2568f27539414 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginaleadb7d7dc37b591b0ef2568f27539414 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.layouts.sidebar.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::layouts.sidebar'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -127,16 +143,21 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginaleadb7d7dc37b591b0ef2568f27539414)): ?>
+<?php $attributes = $__attributesOriginaleadb7d7dc37b591b0ef2568f27539414; ?>
+<?php unset($__attributesOriginaleadb7d7dc37b591b0ef2568f27539414); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginaleadb7d7dc37b591b0ef2568f27539414)): ?>
+<?php $component = $__componentOriginaleadb7d7dc37b591b0ef2568f27539414; ?>
+<?php unset($__componentOriginaleadb7d7dc37b591b0ef2568f27539414); ?>
 <?php endif; ?>
 
                 <div class="flex-1 max-w-full px-[16px] pt-[11px] pb-[22px] bg-white dark:bg-gray-950 ltr:pl-[286px] rtl:pr-[286px] max-lg:!px-[16px] transition-all duration-300 group-[.sidebar-collapsed]/container:ltr:pl-[85px] group-[.sidebar-collapsed]/container:rtl:pr-[85px]">
                     
                     
                     <?php if(! request()->routeIs('admin.configuration.index')): ?>
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginal7c57ca9cedd9eea40c8c6361abe0a0f4 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal7c57ca9cedd9eea40c8c6361abe0a0f4 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.layouts.tabs','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::layouts.tabs'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -147,9 +168,13 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal7c57ca9cedd9eea40c8c6361abe0a0f4)): ?>
+<?php $attributes = $__attributesOriginal7c57ca9cedd9eea40c8c6361abe0a0f4; ?>
+<?php unset($__attributesOriginal7c57ca9cedd9eea40c8c6361abe0a0f4); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal7c57ca9cedd9eea40c8c6361abe0a0f4)): ?>
+<?php $component = $__componentOriginal7c57ca9cedd9eea40c8c6361abe0a0f4; ?>
+<?php unset($__componentOriginal7c57ca9cedd9eea40c8c6361abe0a0f4); ?>
 <?php endif; ?>
                     <?php endif; ?>
 

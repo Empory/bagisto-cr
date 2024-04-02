@@ -42,7 +42,8 @@
     height="<?php echo e($height); ?>"
     :errors="errors"
 >
-    <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+    <?php if (isset($component)) { $__componentOriginal2e576674e3d985561e911b6c77c40893 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal2e576674e3d985561e911b6c77c40893 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.image.index','data' => ['class' => 'w-[110px] h-[110px] rounded-[4px]']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.image'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -52,13 +53,17 @@
 <?php endif; ?>
 <?php $component->withAttributes(['class' => 'w-[110px] h-[110px] rounded-[4px]']); ?> <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal2e576674e3d985561e911b6c77c40893)): ?>
+<?php $attributes = $__attributesOriginal2e576674e3d985561e911b6c77c40893; ?>
+<?php unset($__attributesOriginal2e576674e3d985561e911b6c77c40893); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal2e576674e3d985561e911b6c77c40893)): ?>
+<?php $component = $__componentOriginal2e576674e3d985561e911b6c77c40893; ?>
+<?php unset($__componentOriginal2e576674e3d985561e911b6c77c40893); ?>
 <?php endif; ?>
 </v-media-images>
 
-<?php if (! $__env->hasRenderedOnce('250efc8e-64cc-43a5-a29a-36be00552fac')): $__env->markAsRenderedOnce('250efc8e-64cc-43a5-a29a-36be00552fac');
+<?php if (! $__env->hasRenderedOnce('798cbc4f-672a-4a0b-8862-fe559cd6b2ac')): $__env->markAsRenderedOnce('798cbc4f-672a-4a0b-8862-fe559cd6b2ac');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-media-images-template">
         <!-- Panel Content -->

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'email' => 'Dd',
     'customers' => [
         'forgot-password' => [
             'back'                 => 'Back to sign In ?',

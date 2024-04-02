@@ -23,7 +23,8 @@
             </div>
 
             <div class="mb-[8px] mt-[5px]">
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.dropdown.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::dropdown'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -50,7 +51,8 @@
 
                     <!-- Dropdown Content -->
                      <?php $__env->slot('menu', null, []); ?> 
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginal0223c8534d6a243be608c3a65289c4d0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal0223c8534d6a243be608c3a65289c4d0 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.dropdown.menu.item','data' => ['vFor' => 'option in column.options','vText' => 'option.label','@click' => 'filterPage(option.value, column)']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::dropdown.menu.item'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -61,16 +63,24 @@
 <?php $component->withAttributes(['v-for' => 'option in column.options','v-text' => 'option.label','@click' => 'filterPage(option.value, column)']); ?>
                          <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal0223c8534d6a243be608c3a65289c4d0)): ?>
+<?php $attributes = $__attributesOriginal0223c8534d6a243be608c3a65289c4d0; ?>
+<?php unset($__attributesOriginal0223c8534d6a243be608c3a65289c4d0); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal0223c8534d6a243be608c3a65289c4d0)): ?>
+<?php $component = $__componentOriginal0223c8534d6a243be608c3a65289c4d0; ?>
+<?php unset($__componentOriginal0223c8534d6a243be608c3a65289c4d0); ?>
 <?php endif; ?>
                      <?php $__env->endSlot(); ?>
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2)): ?>
+<?php $attributes = $__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2; ?>
+<?php unset($__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2)): ?>
+<?php $component = $__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2; ?>
+<?php unset($__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2); ?>
 <?php endif; ?>
             </div>
 
@@ -116,7 +126,8 @@
                 </div>
 
                 <div class="mb-[8px] mt-[5px]">
-                    <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                    <?php if (isset($component)) { $__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.dropdown.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::dropdown'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -143,7 +154,8 @@
 
                         <!-- Dropdown Content -->
                          <?php $__env->slot('menu', null, []); ?> 
-                            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                            <?php if (isset($component)) { $__componentOriginal0223c8534d6a243be608c3a65289c4d0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal0223c8534d6a243be608c3a65289c4d0 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.dropdown.menu.item','data' => ['vFor' => 'option in column.options.params.options','vText' => 'option.label','@click' => 'filterPage(option.value, column)']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::dropdown.menu.item'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -154,16 +166,24 @@
 <?php $component->withAttributes(['v-for' => 'option in column.options.params.options','v-text' => 'option.label','@click' => 'filterPage(option.value, column)']); ?>
                              <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal0223c8534d6a243be608c3a65289c4d0)): ?>
+<?php $attributes = $__attributesOriginal0223c8534d6a243be608c3a65289c4d0; ?>
+<?php unset($__attributesOriginal0223c8534d6a243be608c3a65289c4d0); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal0223c8534d6a243be608c3a65289c4d0)): ?>
+<?php $component = $__componentOriginal0223c8534d6a243be608c3a65289c4d0; ?>
+<?php unset($__componentOriginal0223c8534d6a243be608c3a65289c4d0); ?>
 <?php endif; ?>
                          <?php $__env->endSlot(); ?>
                      <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2)): ?>
+<?php $attributes = $__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2; ?>
+<?php unset($__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2)): ?>
+<?php $component = $__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2; ?>
+<?php unset($__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2); ?>
 <?php endif; ?>
                 </div>
 
@@ -267,7 +287,8 @@
                 >
                 </p>
 
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginalfb6be9e824dd35fb24e37e299d255b9b = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalfb6be9e824dd35fb24e37e299d255b9b = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.flat-picker.date','data' => [':allowInput' => 'false']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::flat-picker.date'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -291,12 +312,17 @@
                     />
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginalfb6be9e824dd35fb24e37e299d255b9b)): ?>
+<?php $attributes = $__attributesOriginalfb6be9e824dd35fb24e37e299d255b9b; ?>
+<?php unset($__attributesOriginalfb6be9e824dd35fb24e37e299d255b9b); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalfb6be9e824dd35fb24e37e299d255b9b)): ?>
+<?php $component = $__componentOriginalfb6be9e824dd35fb24e37e299d255b9b; ?>
+<?php unset($__componentOriginalfb6be9e824dd35fb24e37e299d255b9b); ?>
 <?php endif; ?>
 
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginalfb6be9e824dd35fb24e37e299d255b9b = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalfb6be9e824dd35fb24e37e299d255b9b = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.flat-picker.date','data' => [':allowInput' => 'false']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::flat-picker.date'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -320,9 +346,13 @@
                     />
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginalfb6be9e824dd35fb24e37e299d255b9b)): ?>
+<?php $attributes = $__attributesOriginalfb6be9e824dd35fb24e37e299d255b9b; ?>
+<?php unset($__attributesOriginalfb6be9e824dd35fb24e37e299d255b9b); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalfb6be9e824dd35fb24e37e299d255b9b)): ?>
+<?php $component = $__componentOriginalfb6be9e824dd35fb24e37e299d255b9b; ?>
+<?php unset($__componentOriginalfb6be9e824dd35fb24e37e299d255b9b); ?>
 <?php endif; ?>
 
                 <div class="mb-[16px] flex gap-2">
@@ -377,7 +407,8 @@
                 >
                 </p>
 
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginal2199caa745350ee1c77f1b71e4499f91 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal2199caa745350ee1c77f1b71e4499f91 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.flat-picker.datetime','data' => [':allowInput' => 'false']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::flat-picker.datetime'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -401,12 +432,17 @@
                     />
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal2199caa745350ee1c77f1b71e4499f91)): ?>
+<?php $attributes = $__attributesOriginal2199caa745350ee1c77f1b71e4499f91; ?>
+<?php unset($__attributesOriginal2199caa745350ee1c77f1b71e4499f91); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal2199caa745350ee1c77f1b71e4499f91)): ?>
+<?php $component = $__componentOriginal2199caa745350ee1c77f1b71e4499f91; ?>
+<?php unset($__componentOriginal2199caa745350ee1c77f1b71e4499f91); ?>
 <?php endif; ?>
 
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginal2199caa745350ee1c77f1b71e4499f91 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal2199caa745350ee1c77f1b71e4499f91 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.flat-picker.datetime','data' => [':allowInput' => 'false']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::flat-picker.datetime'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -430,9 +466,13 @@
                     />
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal2199caa745350ee1c77f1b71e4499f91)): ?>
+<?php $attributes = $__attributesOriginal2199caa745350ee1c77f1b71e4499f91; ?>
+<?php unset($__attributesOriginal2199caa745350ee1c77f1b71e4499f91); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal2199caa745350ee1c77f1b71e4499f91)): ?>
+<?php $component = $__componentOriginal2199caa745350ee1c77f1b71e4499f91; ?>
+<?php unset($__componentOriginal2199caa745350ee1c77f1b71e4499f91); ?>
 <?php endif; ?>
 
                 <div class="mb-[16px] flex gap-2">
@@ -502,10 +542,11 @@
     </div>
 </div>
 
-<?php if (! $__env->hasRenderedOnce('4a4df989-3b4b-4230-9622-da3919f0abc9')): $__env->markAsRenderedOnce('4a4df989-3b4b-4230-9622-da3919f0abc9');
+<?php if (! $__env->hasRenderedOnce('7dcc54b2-0888-40f6-b538-03ff79008763')): $__env->markAsRenderedOnce('7dcc54b2-0888-40f6-b538-03ff79008763');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-datagrid-searchable-dropdown-template">
-        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+        <?php if (isset($component)) { $__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.dropdown.index','data' => [':closeOnClick' => 'false']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::dropdown'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -577,9 +618,13 @@ $__env->startPush('scripts'); ?>
              <?php $__env->endSlot(); ?>
          <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2)): ?>
+<?php $attributes = $__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2; ?>
+<?php unset($__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2)): ?>
+<?php $component = $__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2; ?>
+<?php unset($__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2); ?>
 <?php endif; ?>
     </script>
 

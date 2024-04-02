@@ -36,7 +36,7 @@
     <v-sidebar-collapse></v-sidebar-collapse>
 </div>
 
-<?php if (! $__env->hasRenderedOnce('a2efe24c-411d-4dd4-8d27-882e290249dc')): $__env->markAsRenderedOnce('a2efe24c-411d-4dd4-8d27-882e290249dc');
+<?php if (! $__env->hasRenderedOnce('969127df-5586-4054-8c1c-6fc584169cfe')): $__env->markAsRenderedOnce('969127df-5586-4054-8c1c-6fc584169cfe');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-sidebar-collapse-template">
         <div

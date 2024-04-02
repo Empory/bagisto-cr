@@ -12,21 +12,21 @@
 @pushOnce('scripts')
     <script type="text/x-template" id="v-categories-carousel-template">
         <div class="container mt-[60px] max-lg:px-[30px] max-sm:mt-[20px]" v-if="! isLoading && categories?.length">
-            <div class="relative">
+            <div class="relative gap-10 flex flex-col">
                 <div
                     ref="swiperContainer"
                     class="flex h-full max-h-[75rem] w-full gap-10  max-sm:gap-4"
 
                 >
                     <div
-                        class=" flex flex-col  md:w-2/5 gap-[15px] justify-items-center  font-medium"
+                        class=" flex flex-col  md:w-1/3 gap-[15px] justify-items-center  font-medium"
                         v-for="category in filteredCategories1" :key="category.id"
                         
                         
                     >
                         <a
                             :href="category.url_path"
-                            class=" w-full md:w-full overflow-hidden h-full bg-[#F5F5F5] "
+                            class=" w-full rounded-md md:w-full overflow-hidden h-full bg-[#F5F5F5] "
                             :aria-label="category.name"
                         >
                             <template v-if="category.images.logo_url">
@@ -45,21 +45,21 @@
                             class=""
                         >
                             <p
-                                class="text-center text-black text-[18px] max-sm:font-normal"
+                                class="text-center rounded-md text-black text-[18px] max-sm:font-normal"
                                 v-text="category.name"
                             >
                             </p>
                         </a>
                     </div>
                     <div
-                        class=" flex flex-col md:w-3/5 gap-[15px] justify-items-center  font-medium"
+                        class=" flex flex-col md:w-2/3 gap-[15px] justify-items-center  font-medium"
                         v-for="category in filteredCategories2" :key="category.id"
                         
                         
                     >
                         <a
                             :href="category.url_path"
-                            class="  w-full md:w-full overflow-hidden h-full bg-[#F5F5F5] "
+                            class="  w-full md:w-full rounded-md overflow-hidden h-full bg-[#F5F5F5] "
                             :aria-label="category.name"
                         >
                             <template v-if="category.images.logo_url">
@@ -100,18 +100,18 @@
                 </span> --}}
                 <div
                     ref="swiperContainer"
-                    class="flex flex-col md:flex-row h-full w-full gap-10  max-sm:gap-4"
+                    class="flex flex-col md:flex-row max-h-[45rem] w-full gap-10  max-sm:gap-4"
 
                 >
                     <div
-                        class=" flex  flex-col  gap-[15px] justify-items-center  font-medium"
+                        class=" flex  flex-col md:w-1/3 w-full  gap-[15px] justify-items-center  font-medium"
                         v-for="category in filteredCategories3" :key="category.id"
                         
                         
                     >
                         <a
                             :href="category.url_path"
-                            class=" w-full md:w-full overflow-hidden h-full bg-[#F5F5F5] "
+                            class=" w-full md:w-full rounded-md overflow-hidden h-full bg-[#F5F5F5] "
                             :aria-label="category.name"
                         >
                             <template v-if="category.images.logo_url">
@@ -211,17 +211,17 @@ computed: {
                         });
                 },
 
-                swipeLeft() {
-                    const container = this.$refs.swiperContainer;
+                // swipeLeft() {
+                //     const container = this.$refs.swiperContainer;
 
-                    container.scrollLeft -= this.offset;
-                },
+                //     container.scrollLeft -= this.offset;
+                // },
 
-                swipeRight() {
-                    const container = this.$refs.swiperContainer;
+                // swipeRight() {
+                //     const container = this.$refs.swiperContainer;
 
-                    container.scrollLeft += this.offset;
-                },
+                //     container.scrollLeft += this.offset;
+                // },
             },
         });
     </script>

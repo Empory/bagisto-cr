@@ -5,7 +5,7 @@
     @onRemove="remove($event)"
 ></v-flash-item>
 
-<?php if (! $__env->hasRenderedOnce('c0208813-0ca4-4323-a6f9-d04084a10cbd')): $__env->markAsRenderedOnce('c0208813-0ca4-4323-a6f9-d04084a10cbd');
+<?php if (! $__env->hasRenderedOnce('ba70da01-a5fb-4231-aaf8-9f56c1060e4d')): $__env->markAsRenderedOnce('ba70da01-a5fb-4231-aaf8-9f56c1060e4d');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-flash-item-template">
         <div

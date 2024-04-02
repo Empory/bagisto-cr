@@ -2,7 +2,8 @@
     $admin = auth()->guard('admin')->user();
 ?>
 
-<?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+<?php if (isset($component)) { $__componentOriginal8001c520f4b7dcb40a16cd3b411856d1 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal8001c520f4b7dcb40a16cd3b411856d1 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.layouts.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::layouts'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -641,7 +642,8 @@
 
             
             <v-store-stats>
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginalcea2175e93762f0989af2c7d24b05213 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalcea2175e93762f0989af2c7d24b05213 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.dashboard.right.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.dashboard.right'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -652,9 +654,13 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginalcea2175e93762f0989af2c7d24b05213)): ?>
+<?php $attributes = $__attributesOriginalcea2175e93762f0989af2c7d24b05213; ?>
+<?php unset($__attributesOriginalcea2175e93762f0989af2c7d24b05213); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalcea2175e93762f0989af2c7d24b05213)): ?>
+<?php $component = $__componentOriginalcea2175e93762f0989af2c7d24b05213; ?>
+<?php unset($__componentOriginalcea2175e93762f0989af2c7d24b05213); ?>
 <?php endif; ?>
             </v-store-stats>
         </div>
@@ -664,7 +670,8 @@
         <script type="module" src="<?php echo e(bagisto_asset('js/chart.js')); ?>"></script>
 
         <script type="text/x-template" id="v-store-stats-template">
-            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+            <?php if (isset($component)) { $__componentOriginal81b4d293d9113446bb908fc8aef5c8f6 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal81b4d293d9113446bb908fc8aef5c8f6 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.index','data' => ['action' => route('admin.catalog.categories.store')]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -676,7 +683,8 @@
                 <div class="rounded-[4px] bg-white dark:bg-gray-900 box-shadow">
                     <!-- Total Sales Shimmer -->
                     <template v-if="isLoading">
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginalc349fba96a11680ac3d588145833c62c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalc349fba96a11680ac3d588145833c62c = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.dashboard.right.date-filters','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.dashboard.right.date-filters'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -687,12 +695,17 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginalc349fba96a11680ac3d588145833c62c)): ?>
+<?php $attributes = $__attributesOriginalc349fba96a11680ac3d588145833c62c; ?>
+<?php unset($__attributesOriginalc349fba96a11680ac3d588145833c62c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalc349fba96a11680ac3d588145833c62c)): ?>
+<?php $component = $__componentOriginalc349fba96a11680ac3d588145833c62c; ?>
+<?php unset($__componentOriginalc349fba96a11680ac3d588145833c62c); ?>
 <?php endif; ?>
 
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginal6a964ec1173c36984a9dde8242749e20 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal6a964ec1173c36984a9dde8242749e20 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.dashboard.right.total-sales','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.dashboard.right.total-sales'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -703,12 +716,17 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal6a964ec1173c36984a9dde8242749e20)): ?>
+<?php $attributes = $__attributesOriginal6a964ec1173c36984a9dde8242749e20; ?>
+<?php unset($__attributesOriginal6a964ec1173c36984a9dde8242749e20); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal6a964ec1173c36984a9dde8242749e20)): ?>
+<?php $component = $__componentOriginal6a964ec1173c36984a9dde8242749e20; ?>
+<?php unset($__componentOriginal6a964ec1173c36984a9dde8242749e20); ?>
 <?php endif; ?>
 
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginal6a964ec1173c36984a9dde8242749e20 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal6a964ec1173c36984a9dde8242749e20 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.dashboard.right.total-sales','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.dashboard.right.total-sales'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -719,9 +737,13 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal6a964ec1173c36984a9dde8242749e20)): ?>
+<?php $attributes = $__attributesOriginal6a964ec1173c36984a9dde8242749e20; ?>
+<?php unset($__attributesOriginal6a964ec1173c36984a9dde8242749e20); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal6a964ec1173c36984a9dde8242749e20)): ?>
+<?php $component = $__componentOriginal6a964ec1173c36984a9dde8242749e20; ?>
+<?php unset($__componentOriginal6a964ec1173c36984a9dde8242749e20); ?>
 <?php endif; ?>
                     </template>
 
@@ -729,7 +751,8 @@
                         <!-- Date Filter -->
                         <div class="flex gap-[6px] px-[16px] py-[8px] border-b dark:border-gray-800">
                             <!-- Start Date Filter -->
-                            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                            <?php if (isset($component)) { $__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.index','data' => ['class' => 'flex-1 mb-[10px]']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -738,7 +761,8 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes(['class' => 'flex-1 mb-[10px]']); ?>
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                <?php if (isset($component)) { $__componentOriginal8378211f70f8c39b16d47cecdac9c7c8 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.label','data' => ['class' => '!text-gray-800 dark:!text-white font-medium']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group.label'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -750,12 +774,17 @@
                                     <?php echo app('translator')->get('admin::app.dashboard.index.start-date'); ?>
                                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8)): ?>
+<?php $attributes = $__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8; ?>
+<?php unset($__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal8378211f70f8c39b16d47cecdac9c7c8)): ?>
+<?php $component = $__componentOriginal8378211f70f8c39b16d47cecdac9c7c8; ?>
+<?php unset($__componentOriginal8378211f70f8c39b16d47cecdac9c7c8); ?>
 <?php endif; ?>
     
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                <?php if (isset($component)) { $__componentOriginal53af403f6b2179a3039d488b8ab2a267 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal53af403f6b2179a3039d488b8ab2a267 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.control','data' => ['type' => 'date','name' => 'startDate','class' => 'cursor-pointer','placeholder' => trans('admin::app.dashboard.index.start-date'),'vModel' => 'filters.start']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group.control'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -766,19 +795,28 @@
 <?php $component->withAttributes(['type' => 'date','name' => 'startDate','class' => 'cursor-pointer','placeholder' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute(trans('admin::app.dashboard.index.start-date')),'v-model' => 'filters.start']); ?>
                                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal53af403f6b2179a3039d488b8ab2a267)): ?>
+<?php $attributes = $__attributesOriginal53af403f6b2179a3039d488b8ab2a267; ?>
+<?php unset($__attributesOriginal53af403f6b2179a3039d488b8ab2a267); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal53af403f6b2179a3039d488b8ab2a267)): ?>
+<?php $component = $__componentOriginal53af403f6b2179a3039d488b8ab2a267; ?>
+<?php unset($__componentOriginal53af403f6b2179a3039d488b8ab2a267); ?>
 <?php endif; ?>
                              <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3)): ?>
+<?php $attributes = $__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3; ?>
+<?php unset($__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3)): ?>
+<?php $component = $__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3; ?>
+<?php unset($__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3); ?>
 <?php endif; ?>
     
                             <!-- End Date Filter -->
-                            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                            <?php if (isset($component)) { $__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.index','data' => ['class' => 'flex-1 mb-[10px]']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -787,7 +825,8 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes(['class' => 'flex-1 mb-[10px]']); ?>
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                <?php if (isset($component)) { $__componentOriginal8378211f70f8c39b16d47cecdac9c7c8 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.label','data' => ['class' => '!text-gray-800 dark:!text-white font-medium']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group.label'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -799,12 +838,17 @@
                                     <?php echo app('translator')->get('admin::app.dashboard.index.end-date'); ?>
                                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8)): ?>
+<?php $attributes = $__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8; ?>
+<?php unset($__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal8378211f70f8c39b16d47cecdac9c7c8)): ?>
+<?php $component = $__componentOriginal8378211f70f8c39b16d47cecdac9c7c8; ?>
+<?php unset($__componentOriginal8378211f70f8c39b16d47cecdac9c7c8); ?>
 <?php endif; ?>
     
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                <?php if (isset($component)) { $__componentOriginal53af403f6b2179a3039d488b8ab2a267 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal53af403f6b2179a3039d488b8ab2a267 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.control','data' => ['type' => 'date','name' => 'endDate','class' => 'cursor-pointer','placeholder' => trans('admin::app.dashboard.index.end-date'),'vModel' => 'filters.end']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group.control'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -815,15 +859,23 @@
 <?php $component->withAttributes(['type' => 'date','name' => 'endDate','class' => 'cursor-pointer','placeholder' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute(trans('admin::app.dashboard.index.end-date')),'v-model' => 'filters.end']); ?>
                                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal53af403f6b2179a3039d488b8ab2a267)): ?>
+<?php $attributes = $__attributesOriginal53af403f6b2179a3039d488b8ab2a267; ?>
+<?php unset($__attributesOriginal53af403f6b2179a3039d488b8ab2a267); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal53af403f6b2179a3039d488b8ab2a267)): ?>
+<?php $component = $__componentOriginal53af403f6b2179a3039d488b8ab2a267; ?>
+<?php unset($__componentOriginal53af403f6b2179a3039d488b8ab2a267); ?>
 <?php endif; ?>
                              <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3)): ?>
+<?php $attributes = $__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3; ?>
+<?php unset($__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3)): ?>
+<?php $component = $__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3; ?>
+<?php unset($__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3); ?>
 <?php endif; ?>
                         </div>
     
@@ -912,7 +964,8 @@
 
                         <!-- Top Selling Products Shimmer -->
                         <template v-if="isLoading">
-                            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                            <?php if (isset($component)) { $__componentOriginal2ea8cb2aab560f51940170c5aeca9dd0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal2ea8cb2aab560f51940170c5aeca9dd0 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.dashboard.right.top-selling','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.dashboard.right.top-selling'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -923,9 +976,13 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal2ea8cb2aab560f51940170c5aeca9dd0)): ?>
+<?php $attributes = $__attributesOriginal2ea8cb2aab560f51940170c5aeca9dd0; ?>
+<?php unset($__attributesOriginal2ea8cb2aab560f51940170c5aeca9dd0); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal2ea8cb2aab560f51940170c5aeca9dd0)): ?>
+<?php $component = $__componentOriginal2ea8cb2aab560f51940170c5aeca9dd0; ?>
+<?php unset($__componentOriginal2ea8cb2aab560f51940170c5aeca9dd0); ?>
 <?php endif; ?>
                         </template>
 
@@ -1023,7 +1080,8 @@
 
                     <!-- Customers Shimmer -->
                     <template v-if="isLoading">
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginal18d5186ab533ab0f41e347fbdb09acd0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal18d5186ab533ab0f41e347fbdb09acd0 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.dashboard.right.most-customer-sales','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.dashboard.right.most-customer-sales'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -1034,9 +1092,13 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal18d5186ab533ab0f41e347fbdb09acd0)): ?>
+<?php $attributes = $__attributesOriginal18d5186ab533ab0f41e347fbdb09acd0; ?>
+<?php unset($__attributesOriginal18d5186ab533ab0f41e347fbdb09acd0); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal18d5186ab533ab0f41e347fbdb09acd0)): ?>
+<?php $component = $__componentOriginal18d5186ab533ab0f41e347fbdb09acd0; ?>
+<?php unset($__componentOriginal18d5186ab533ab0f41e347fbdb09acd0); ?>
 <?php endif; ?>
                     </template>
 
@@ -1105,9 +1167,13 @@
                 </div>
              <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal81b4d293d9113446bb908fc8aef5c8f6)): ?>
+<?php $attributes = $__attributesOriginal81b4d293d9113446bb908fc8aef5c8f6; ?>
+<?php unset($__attributesOriginal81b4d293d9113446bb908fc8aef5c8f6); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal81b4d293d9113446bb908fc8aef5c8f6)): ?>
+<?php $component = $__componentOriginal81b4d293d9113446bb908fc8aef5c8f6; ?>
+<?php unset($__componentOriginal81b4d293d9113446bb908fc8aef5c8f6); ?>
 <?php endif; ?>
         </script>
 
@@ -1262,8 +1328,12 @@
     <?php $__env->stopPush(); ?>
  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal8001c520f4b7dcb40a16cd3b411856d1)): ?>
+<?php $attributes = $__attributesOriginal8001c520f4b7dcb40a16cd3b411856d1; ?>
+<?php unset($__attributesOriginal8001c520f4b7dcb40a16cd3b411856d1); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal8001c520f4b7dcb40a16cd3b411856d1)): ?>
+<?php $component = $__componentOriginal8001c520f4b7dcb40a16cd3b411856d1; ?>
+<?php unset($__componentOriginal8001c520f4b7dcb40a16cd3b411856d1); ?>
 <?php endif; ?>
 <?php /**PATH C:\bagisto-cr\packages\Webkul\Admin\src/resources/views/dashboard/index.blade.php ENDPATH**/ ?>

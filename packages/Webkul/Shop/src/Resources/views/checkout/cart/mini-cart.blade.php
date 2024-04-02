@@ -28,9 +28,9 @@
                     </p>
                 </div>
 
-                <p class="text-[16px]">
+                {{-- <p class="text-[16px]">
                     @lang('shop::app.checkout.cart.mini-cart.offer-on-orders')
-                </p>
+                </p> --}}
             </x-slot:header>
 
             <!-- Drawer Content -->

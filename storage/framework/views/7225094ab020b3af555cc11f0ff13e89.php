@@ -59,7 +59,8 @@
 
     <div id="app">
         
-        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+        <?php if (isset($component)) { $__componentOriginal701f473bf36886c6d0b4697249a816f6 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal701f473bf36886c6d0b4697249a816f6 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.flash-group.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::flash-group'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -70,9 +71,13 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal701f473bf36886c6d0b4697249a816f6)): ?>
+<?php $attributes = $__attributesOriginal701f473bf36886c6d0b4697249a816f6; ?>
+<?php unset($__attributesOriginal701f473bf36886c6d0b4697249a816f6); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal701f473bf36886c6d0b4697249a816f6)): ?>
+<?php $component = $__componentOriginal701f473bf36886c6d0b4697249a816f6; ?>
+<?php unset($__componentOriginal701f473bf36886c6d0b4697249a816f6); ?>
 <?php endif; ?>
 
         <?php echo view_render_event('bagisto.shop.layout.content.before'); ?>

@@ -9,7 +9,8 @@
     <div class="w-full flex justify-between items-center">
         
         <div class="flex items-center gap-x-[5px]">
-            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+            <?php if (isset($component)) { $__componentOriginal2b3e2da8ab003ef79d854b1862e64fc8 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal2b3e2da8ab003ef79d854b1862e64fc8 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.drawer.index','data' => ['position' => 'left','width' => '80%']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::drawer'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -70,7 +71,8 @@
 
                     
                     <div class="absolute w-full flex bottom-0 left-0 bg-white shadow-lg p-4 gap-x-[20px] justify-between items-center mb-[15px]">
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginal6eb652d0a4a36e6466d8d4f363feb553 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.dropdown.index','data' => ['position' => 'top-left']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::dropdown'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -97,12 +99,17 @@
                              <?php $__env->endSlot(); ?>
                          <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553)): ?>
+<?php $attributes = $__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553; ?>
+<?php unset($__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal6eb652d0a4a36e6466d8d4f363feb553)): ?>
+<?php $component = $__componentOriginal6eb652d0a4a36e6466d8d4f363feb553; ?>
+<?php unset($__componentOriginal6eb652d0a4a36e6466d8d4f363feb553); ?>
 <?php endif; ?>
 
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginal6eb652d0a4a36e6466d8d4f363feb553 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.dropdown.index','data' => ['position' => 'top-right']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::dropdown'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -139,9 +146,13 @@
                              <?php $__env->endSlot(); ?>
                          <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553)): ?>
+<?php $attributes = $__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553; ?>
+<?php unset($__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal6eb652d0a4a36e6466d8d4f363feb553)): ?>
+<?php $component = $__componentOriginal6eb652d0a4a36e6466d8d4f363feb553; ?>
+<?php unset($__componentOriginal6eb652d0a4a36e6466d8d4f363feb553); ?>
 <?php endif; ?>
                     </div>
                  <?php $__env->endSlot(); ?>
@@ -149,9 +160,13 @@
                  <?php $__env->slot('footer', null, []); ?>  <?php $__env->endSlot(); ?>
              <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal2b3e2da8ab003ef79d854b1862e64fc8)): ?>
+<?php $attributes = $__attributesOriginal2b3e2da8ab003ef79d854b1862e64fc8; ?>
+<?php unset($__attributesOriginal2b3e2da8ab003ef79d854b1862e64fc8); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal2b3e2da8ab003ef79d854b1862e64fc8)): ?>
+<?php $component = $__componentOriginal2b3e2da8ab003ef79d854b1862e64fc8; ?>
+<?php unset($__componentOriginal2b3e2da8ab003ef79d854b1862e64fc8); ?>
 <?php endif; ?>
 
             <a
@@ -182,7 +197,8 @@
 
                 <?php echo $__env->make('shop::checkout.cart.mini-cart', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginal6eb652d0a4a36e6466d8d4f363feb553 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.dropdown.index','data' => ['position' => 'bottom-'.e(core()->getCurrentLocale()->direction === 'ltr' ? 'right' : 'left').'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::dropdown'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -271,7 +287,8 @@
 
                                 
                                 <?php if(auth()->guard('customer')->check()): ?>
-                                    <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                    <?php if (isset($component)) { $__componentOriginal4d3fcee3e355fb6c8889181b04f357cc = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.form.index','data' => ['method' => 'DELETE','action' => ''.e(route('shop.customer.session.destroy')).'','id' => 'customerLogout']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::form'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -282,9 +299,13 @@
 <?php $component->withAttributes(['method' => 'DELETE','action' => ''.e(route('shop.customer.session.destroy')).'','id' => 'customerLogout']); ?>
                                      <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc)): ?>
+<?php $attributes = $__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc; ?>
+<?php unset($__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal4d3fcee3e355fb6c8889181b04f357cc)): ?>
+<?php $component = $__componentOriginal4d3fcee3e355fb6c8889181b04f357cc; ?>
+<?php unset($__componentOriginal4d3fcee3e355fb6c8889181b04f357cc); ?>
 <?php endif; ?>
 
                                     <a
@@ -300,9 +321,13 @@
                     <?php endif; ?>
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553)): ?>
+<?php $attributes = $__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553; ?>
+<?php unset($__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal6eb652d0a4a36e6466d8d4f363feb553)): ?>
+<?php $component = $__componentOriginal6eb652d0a4a36e6466d8d4f363feb553; ?>
+<?php unset($__componentOriginal6eb652d0a4a36e6466d8d4f363feb553); ?>
 <?php endif; ?>
             </div>
         </div>
@@ -326,17 +351,12 @@
                 required
             >
 
-            <button
-                type="button"
-                class="icon-camera flex items-center absolute top-[12px] right-[12px] pr-3 text-[22px]"
-                aria-label="Search"
-            >
-            </button>
+            
         </div>
     </form>
 </div>
 
-<?php if (! $__env->hasRenderedOnce('75ef4d2d-5f0d-4a6a-98f4-44d61180bf8c')): $__env->markAsRenderedOnce('75ef4d2d-5f0d-4a6a-98f4-44d61180bf8c');
+<?php if (! $__env->hasRenderedOnce('aa1759aa-4f5c-44f9-b5c1-159c95ff1504')): $__env->markAsRenderedOnce('aa1759aa-4f5c-44f9-b5c1-159c95ff1504');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-mobile-category-template">
         <div>

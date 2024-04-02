@@ -64,7 +64,7 @@
     <?php endif; ?>
 </v-drawer>
 
-<?php if (! $__env->hasRenderedOnce('7e07840b-6fab-4640-ab52-bc891f1ab234')): $__env->markAsRenderedOnce('7e07840b-6fab-4640-ab52-bc891f1ab234');
+<?php if (! $__env->hasRenderedOnce('89f08b0e-6774-4e09-8aba-599e1495676d')): $__env->markAsRenderedOnce('89f08b0e-6774-4e09-8aba-599e1495676d');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-drawer-template">
         <div>

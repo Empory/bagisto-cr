@@ -1,5 +1,6 @@
 <template v-if="isLoading">
-    <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+    <?php if (isset($component)) { $__componentOriginal53a6a59aff92302e5d442819eff9928e = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal53a6a59aff92302e5d442819eff9928e = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.datagrid.toolbar','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.datagrid.toolbar'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -10,9 +11,13 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal53a6a59aff92302e5d442819eff9928e)): ?>
+<?php $attributes = $__attributesOriginal53a6a59aff92302e5d442819eff9928e; ?>
+<?php unset($__attributesOriginal53a6a59aff92302e5d442819eff9928e); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal53a6a59aff92302e5d442819eff9928e)): ?>
+<?php $component = $__componentOriginal53a6a59aff92302e5d442819eff9928e; ?>
+<?php unset($__componentOriginal53a6a59aff92302e5d442819eff9928e); ?>
 <?php endif; ?>
 </template>
 
@@ -26,7 +31,8 @@
                 v-if="applied.massActions.indices.length"
             >
                 <!-- Mass Action Dropdown -->
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.dropdown.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::dropdown'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -107,9 +113,13 @@
                      <?php $__env->endSlot(); ?>
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2)): ?>
+<?php $attributes = $__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2; ?>
+<?php unset($__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2)): ?>
+<?php $component = $__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2; ?>
+<?php unset($__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2); ?>
 <?php endif; ?>
 
                 <div class="ltr:pl-[10px] rtl:pr-[10px]">
@@ -156,7 +166,8 @@
         <!-- Right Toolbar -->
         <div class="flex gap-x-[16px]">
             <!-- Filters Activation Button -->
-            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+            <?php if (isset($component)) { $__componentOriginal9bfb526197f1d7304e7fade44c26fbb8 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal9bfb526197f1d7304e7fade44c26fbb8 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.drawer.index','data' => ['width' => '350px','ref' => 'filterDrawer']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::drawer'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -199,7 +210,8 @@
 
                 <!-- Drawer Content -->
                  <?php $__env->slot('content', null, ['class' => '!p-[20px]']); ?> 
-                    <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                    <?php if (isset($component)) { $__componentOriginal27406280b6a578ae7d6f6c5f4c864522 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal27406280b6a578ae7d6f6c5f4c864522 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.datagrid.filters','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::datagrid.filters'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -209,20 +221,29 @@
 <?php endif; ?>
 <?php $component->withAttributes([]); ?> <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal27406280b6a578ae7d6f6c5f4c864522)): ?>
+<?php $attributes = $__attributesOriginal27406280b6a578ae7d6f6c5f4c864522; ?>
+<?php unset($__attributesOriginal27406280b6a578ae7d6f6c5f4c864522); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal27406280b6a578ae7d6f6c5f4c864522)): ?>
+<?php $component = $__componentOriginal27406280b6a578ae7d6f6c5f4c864522; ?>
+<?php unset($__componentOriginal27406280b6a578ae7d6f6c5f4c864522); ?>
 <?php endif; ?>
                  <?php $__env->endSlot(); ?>
              <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal9bfb526197f1d7304e7fade44c26fbb8)): ?>
+<?php $attributes = $__attributesOriginal9bfb526197f1d7304e7fade44c26fbb8; ?>
+<?php unset($__attributesOriginal9bfb526197f1d7304e7fade44c26fbb8); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal9bfb526197f1d7304e7fade44c26fbb8)): ?>
+<?php $component = $__componentOriginal9bfb526197f1d7304e7fade44c26fbb8; ?>
+<?php unset($__componentOriginal9bfb526197f1d7304e7fade44c26fbb8); ?>
 <?php endif; ?>
 
             <div class="flex items-center gap-x-[8px]">
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.dropdown.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::dropdown'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -245,7 +266,8 @@
 
                     <!-- Dropdown Content -->
                      <?php $__env->slot('menu', null, []); ?> 
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginal0223c8534d6a243be608c3a65289c4d0 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal0223c8534d6a243be608c3a65289c4d0 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.dropdown.menu.item','data' => ['vFor' => 'perPageOption in available.meta.per_page_options','vText' => 'perPageOption','@click' => 'changePerPageOption(perPageOption)']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::dropdown.menu.item'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -256,16 +278,24 @@
 <?php $component->withAttributes(['v-for' => 'perPageOption in available.meta.per_page_options','v-text' => 'perPageOption','@click' => 'changePerPageOption(perPageOption)']); ?>
                          <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal0223c8534d6a243be608c3a65289c4d0)): ?>
+<?php $attributes = $__attributesOriginal0223c8534d6a243be608c3a65289c4d0; ?>
+<?php unset($__attributesOriginal0223c8534d6a243be608c3a65289c4d0); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal0223c8534d6a243be608c3a65289c4d0)): ?>
+<?php $component = $__componentOriginal0223c8534d6a243be608c3a65289c4d0; ?>
+<?php unset($__componentOriginal0223c8534d6a243be608c3a65289c4d0); ?>
 <?php endif; ?>
                      <?php $__env->endSlot(); ?>
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2)): ?>
+<?php $attributes = $__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2; ?>
+<?php unset($__attributesOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2)): ?>
+<?php $component = $__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2; ?>
+<?php unset($__componentOriginalaf937e0ec72fa678d3a0c6dc6c0ac5f2); ?>
 <?php endif; ?>
 
                 <p class="whitespace-nowrap text-gray-600 dark:text-gray-300 max-sm:hidden">per page</p>

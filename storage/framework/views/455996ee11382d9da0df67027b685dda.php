@@ -17,14 +17,15 @@
 
 </v-datagrid-table>
 
-<?php if (! $__env->hasRenderedOnce('0e0e3642-ea3b-4191-a5a1-4de3b3e2f930')): $__env->markAsRenderedOnce('0e0e3642-ea3b-4191-a5a1-4de3b3e2f930');
+<?php if (! $__env->hasRenderedOnce('fe807b22-984b-4947-8972-a1fe4079b4a9')): $__env->markAsRenderedOnce('fe807b22-984b-4947-8972-a1fe4079b4a9');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-datagrid-table-template">
         <div class="w-full">
             <div class="table-responsive grid w-full box-shadow rounded-[4px] bg-white dark:bg-gray-900 overflow-hidden">
                 <slot name="header">
                     <template v-if="$parent.isLoading">
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginalc107096d39100b5f7264e4f2087676a5 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalc107096d39100b5f7264e4f2087676a5 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.datagrid.table.head','data' => ['isMultiRow' => $isMultiRow]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.datagrid.table.head'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -34,9 +35,13 @@ $__env->startPush('scripts'); ?>
 <?php endif; ?>
 <?php $component->withAttributes(['isMultiRow' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($isMultiRow)]); ?> <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginalc107096d39100b5f7264e4f2087676a5)): ?>
+<?php $attributes = $__attributesOriginalc107096d39100b5f7264e4f2087676a5; ?>
+<?php unset($__attributesOriginalc107096d39100b5f7264e4f2087676a5); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalc107096d39100b5f7264e4f2087676a5)): ?>
+<?php $component = $__componentOriginalc107096d39100b5f7264e4f2087676a5; ?>
+<?php unset($__componentOriginalc107096d39100b5f7264e4f2087676a5); ?>
 <?php endif; ?>
                     </template>
 
@@ -98,7 +103,8 @@ $__env->startPush('scripts'); ?>
 
                 <slot name="body">
                     <template v-if="$parent.isLoading">
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginal601d211589286a2faeaa4f7f9edf9405 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal601d211589286a2faeaa4f7f9edf9405 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.datagrid.table.body','data' => ['isMultiRow' => $isMultiRow]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.datagrid.table.body'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -108,9 +114,13 @@ $__env->startPush('scripts'); ?>
 <?php endif; ?>
 <?php $component->withAttributes(['isMultiRow' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($isMultiRow)]); ?> <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal601d211589286a2faeaa4f7f9edf9405)): ?>
+<?php $attributes = $__attributesOriginal601d211589286a2faeaa4f7f9edf9405; ?>
+<?php unset($__attributesOriginal601d211589286a2faeaa4f7f9edf9405); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal601d211589286a2faeaa4f7f9edf9405)): ?>
+<?php $component = $__componentOriginal601d211589286a2faeaa4f7f9edf9405; ?>
+<?php unset($__componentOriginal601d211589286a2faeaa4f7f9edf9405); ?>
 <?php endif; ?>
                     </template>
 

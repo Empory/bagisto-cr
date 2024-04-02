@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'email' => 'ff',
     'customers' => [
         'forgot-password' => [
             'back'                 => 'Girişe geri dön?',
@@ -772,6 +773,7 @@ return [
         'reviews'               => 'Yorumlar',
         'wishlist'              => 'İstek Listesi',
     ],
+
 
     'subscription' => [
         'already'             => 'Zaten bültenimize abonesiniz.',

@@ -13,7 +13,8 @@
 <?php unset($__defined_vars); ?>
 
 <v-datagrid <?php echo e($attributes); ?>>
-    <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+    <?php if (isset($component)) { $__componentOriginal6de075cdae15a153e978193a85b13d2e = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal6de075cdae15a153e978193a85b13d2e = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.datagrid.index','data' => ['isMultiRow' => $isMultiRow]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.datagrid'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -23,23 +24,28 @@
 <?php endif; ?>
 <?php $component->withAttributes(['isMultiRow' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($isMultiRow)]); ?> <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal6de075cdae15a153e978193a85b13d2e)): ?>
+<?php $attributes = $__attributesOriginal6de075cdae15a153e978193a85b13d2e; ?>
+<?php unset($__attributesOriginal6de075cdae15a153e978193a85b13d2e); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal6de075cdae15a153e978193a85b13d2e)): ?>
+<?php $component = $__componentOriginal6de075cdae15a153e978193a85b13d2e; ?>
+<?php unset($__componentOriginal6de075cdae15a153e978193a85b13d2e); ?>
 <?php endif; ?>
 
     <?php echo e($slot); ?>
 
 </v-datagrid>
 
-<?php if (! $__env->hasRenderedOnce('9babedc8-8ad7-4f21-8e05-f790a3e155b3')): $__env->markAsRenderedOnce('9babedc8-8ad7-4f21-8e05-f790a3e155b3');
+<?php if (! $__env->hasRenderedOnce('5113c0e0-79b0-4ef9-89cb-5e536b8e96bd')): $__env->markAsRenderedOnce('5113c0e0-79b0-4ef9-89cb-5e536b8e96bd');
 $__env->startPush('scripts'); ?>
     <script
         type="text/x-template"
         id="v-datagrid-template"
     >
         <div>
-            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+            <?php if (isset($component)) { $__componentOriginal8046fc85a01e459a95730f6b17c2981e = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal8046fc85a01e459a95730f6b17c2981e = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.datagrid.toolbar','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::datagrid.toolbar'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -49,13 +55,18 @@ $__env->startPush('scripts'); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?> <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal8046fc85a01e459a95730f6b17c2981e)): ?>
+<?php $attributes = $__attributesOriginal8046fc85a01e459a95730f6b17c2981e; ?>
+<?php unset($__attributesOriginal8046fc85a01e459a95730f6b17c2981e); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal8046fc85a01e459a95730f6b17c2981e)): ?>
+<?php $component = $__componentOriginal8046fc85a01e459a95730f6b17c2981e; ?>
+<?php unset($__componentOriginal8046fc85a01e459a95730f6b17c2981e); ?>
 <?php endif; ?>
 
             <div class="flex mt-[16px]">
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginal2c52fad4d6942a06d8ae18d5fe6d3271 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal2c52fad4d6942a06d8ae18d5fe6d3271 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.datagrid.table','data' => ['isMultiRow' => $isMultiRow]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::datagrid.table'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -97,9 +108,13 @@ $__env->startPush('scripts'); ?>
                     </template>
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal2c52fad4d6942a06d8ae18d5fe6d3271)): ?>
+<?php $attributes = $__attributesOriginal2c52fad4d6942a06d8ae18d5fe6d3271; ?>
+<?php unset($__attributesOriginal2c52fad4d6942a06d8ae18d5fe6d3271); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal2c52fad4d6942a06d8ae18d5fe6d3271)): ?>
+<?php $component = $__componentOriginal2c52fad4d6942a06d8ae18d5fe6d3271; ?>
+<?php unset($__componentOriginal2c52fad4d6942a06d8ae18d5fe6d3271); ?>
 <?php endif; ?>
             </div>
         </div>

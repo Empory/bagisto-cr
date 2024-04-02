@@ -1,28 +1,7 @@
-<div class="w-full flex justify-between min-h-[78px] px-[60px] border border-t-0 border-b-[1px] border-l-0 border-r-0 max-1180:px-[30px]">
+<div class="w-full flex justify-between min-h-[78px] px-[60px]  max-1180:px-[30px]">
     
     
-    <div class="flex items-center gap-x-[40px] pt-[28px] max-[1180px]:gap-x-[20px]">
-        <a
-            href="<?php echo e(route('shop.home.index')); ?>"
-            class="place-self-start -mt-[4px]"
-            aria-label="Bagisto "
-        >
-            <img
-                src="<?php echo e(core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg')); ?>"
-                width="131"
-                height="29"
-                alt="Bagisto"
-            >
-        </a>
-
-        <v-desktop-category>
-            <div class="flex gap-[20px] items-center pb-[21px]">
-                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
-                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
-                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
-            </div>
-        </v-desktop-category>
-    </div>
+  
 
     
     <div class="flex gap-x-[35px] items-center max-lg:gap-x-[30px] max-[1100px]:gap-x-[25px]">
@@ -57,22 +36,33 @@
         </form>
 
         
-        <div class="flex gap-x-[35px] mt-[5px] max-lg:gap-x-[30px] max-[1100px]:gap-x-[25px]">
-            
-            <?php if(core()->getConfigData('general.content.shop.compare_option')): ?>
-                <a
-                    href="<?php echo e(route('shop.compare.index')); ?>"
-                    aria-label="Compare"
-                >
-                    <span class="icon-compare inline-block text-[24px] cursor-pointer"></span>
-                </a>
-            <?php endif; ?>
+        
+    </div>
+    <div class="flex items-center justify-center gap-x-[135px] pr-[186px] pt-[28px] max-[1180px]:gap-x-[20px]">
+        <a
+            href="<?php echo e(route('shop.home.index')); ?>"
+            class="place-self-start -mt-[4px]"
+            aria-label="Bagisto "
+        >
+            <img
+                src="<?php echo e(core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg')); ?>"
+                width="131"
+                height="29"
+                alt="Bagisto"
+            >
+        </a>
 
-            
-            <?php echo $__env->make('shop::checkout.cart.mini-cart', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+       
+    </div>
+    <div class="flex items-center gap-x-[35px] mt-[5px] max-lg:gap-x-[30px] max-[1100px]:gap-x-[25px]">
+        
+        
 
-            
-            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+        
+
+        
+        <?php if (isset($component)) { $__componentOriginal6eb652d0a4a36e6466d8d4f363feb553 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.dropdown.index','data' => ['position' => 'bottom-'.e(core()->getCurrentLocale()->direction === 'ltr' ? 'right' : 'left').'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::dropdown'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -81,87 +71,88 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes(['position' => 'bottom-'.e(core()->getCurrentLocale()->direction === 'ltr' ? 'right' : 'left').'']); ?>
-                 <?php $__env->slot('toggle', null, []); ?> 
-                    <span class="icon-users inline-block text-[24px] cursor-pointer"></span>
+             <?php $__env->slot('toggle', null, []); ?> 
+                <span class="icon-users inline-block text-[24px] cursor-pointer"></span>
+             <?php $__env->endSlot(); ?>
+
+            
+            <?php if(auth()->guard('customer')->guest()): ?>
+                 <?php $__env->slot('content', null, []); ?> 
+                    <div class="grid gap-[10px]">
+                        <p class="text-[20px] font-dmserif">
+                            <?php echo app('translator')->get('shop::app.components.layouts.header.welcome-guest'); ?>
+                        </p>
+
+                        <p class="text-[14px]">
+                            <?php echo app('translator')->get('shop::app.components.layouts.header.dropdown-text'); ?>
+                        </p>
+                    </div>
+
+                    <p class="w-full mt-[12px] py-2px border border-[#E9E9E9]"></p>
+
+                    <div class="flex gap-[16px] mt-[25px]">
+                        <a
+                            href="<?php echo e(route('shop.customer.session.create')); ?>"
+                            class="primary-button block w-max px-[29px] mx-auto m-0 ml-[0px] rounded-[18px] text-base text-center"
+                        >
+                            <?php echo app('translator')->get('shop::app.components.layouts.header.sign-in'); ?>
+                        </a>
+
+                        <a
+                            href="<?php echo e(route('shop.customers.register.index')); ?>"
+                            class="secondary-button block w-max m-0 ml-[0px] mx-auto px-[29px] border-2 rounded-[18px] text-base text-center"
+                        >
+                            <?php echo app('translator')->get('shop::app.components.layouts.header.sign-up'); ?>
+                        </a>
+                    </div>
                  <?php $__env->endSlot(); ?>
+            <?php endif; ?>
 
-                
-                <?php if(auth()->guard('customer')->guest()): ?>
-                     <?php $__env->slot('content', null, []); ?> 
-                        <div class="grid gap-[10px]">
-                            <p class="text-[20px] font-dmserif">
-                                <?php echo app('translator')->get('shop::app.components.layouts.header.welcome-guest'); ?>
-                            </p>
+            
+            <?php if(auth()->guard('customer')->check()): ?>
+                 <?php $__env->slot('content', null, ['class' => '!p-[0px]']); ?> 
+                    <div class="grid gap-[10px] p-[20px] pb-0">
+                        <p class="text-[20px] font-dmserif">
+                            <?php echo app('translator')->get('shop::app.components.layouts.header.welcome'); ?>’
+                            <?php echo e(auth()->guard('customer')->user()->first_name); ?>
 
-                            <p class="text-[14px]">
-                                <?php echo app('translator')->get('shop::app.components.layouts.header.dropdown-text'); ?>
-                            </p>
-                        </div>
+                        </p>
 
-                        <p class="w-full mt-[12px] py-2px border border-[#E9E9E9]"></p>
+                        <p class="text-[14px]">
+                            <?php echo app('translator')->get('shop::app.components.layouts.header.dropdown-text'); ?>
+                        </p>
+                    </div>
 
-                        <div class="flex gap-[16px] mt-[25px]">
-                            <a
-                                href="<?php echo e(route('shop.customer.session.create')); ?>"
-                                class="primary-button block w-max px-[29px] mx-auto m-0 ml-[0px] rounded-[18px] text-base text-center"
-                            >
-                                <?php echo app('translator')->get('shop::app.components.layouts.header.sign-in'); ?>
-                            </a>
+                    <p class="w-full mt-[12px] py-2px border border-[#E9E9E9]"></p>
 
-                            <a
-                                href="<?php echo e(route('shop.customers.register.index')); ?>"
-                                class="secondary-button block w-max m-0 ml-[0px] mx-auto px-[29px] border-2 rounded-[18px] text-base text-center"
-                            >
-                                <?php echo app('translator')->get('shop::app.components.layouts.header.sign-up'); ?>
-                            </a>
-                        </div>
-                     <?php $__env->endSlot(); ?>
-                <?php endif; ?>
+                    <div class="grid gap-[4px] mt-[10px] pb-[10px]">
+                        <a
+                            class="px-5 py-2 text-[16px] hover:bg-gray-100 cursor-pointer"
+                            href="<?php echo e(route('shop.customers.account.profile.index')); ?>"
+                        >
+                            <?php echo app('translator')->get('shop::app.components.layouts.header.profile'); ?>
+                        </a>
 
-                
-                <?php if(auth()->guard('customer')->check()): ?>
-                     <?php $__env->slot('content', null, ['class' => '!p-[0px]']); ?> 
-                        <div class="grid gap-[10px] p-[20px] pb-0">
-                            <p class="text-[20px] font-dmserif">
-                                <?php echo app('translator')->get('shop::app.components.layouts.header.welcome'); ?>’
-                                <?php echo e(auth()->guard('customer')->user()->first_name); ?>
+                        <a
+                            class="px-5 py-2 text-[16px] hover:bg-gray-100 cursor-pointer"
+                            href="<?php echo e(route('shop.customers.account.orders.index')); ?>"
+                        >
+                            <?php echo app('translator')->get('shop::app.components.layouts.header.orders'); ?>
+                        </a>
 
-                            </p>
-
-                            <p class="text-[14px]">
-                                <?php echo app('translator')->get('shop::app.components.layouts.header.dropdown-text'); ?>
-                            </p>
-                        </div>
-
-                        <p class="w-full mt-[12px] py-2px border border-[#E9E9E9]"></p>
-
-                        <div class="grid gap-[4px] mt-[10px] pb-[10px]">
+                        <?php if(core()->getConfigData('general.content.shop.wishlist_option')): ?>
                             <a
                                 class="px-5 py-2 text-[16px] hover:bg-gray-100 cursor-pointer"
-                                href="<?php echo e(route('shop.customers.account.profile.index')); ?>"
+                                href="<?php echo e(route('shop.customers.account.wishlist.index')); ?>"
                             >
-                                <?php echo app('translator')->get('shop::app.components.layouts.header.profile'); ?>
+                                <?php echo app('translator')->get('shop::app.components.layouts.header.wishlist'); ?>
                             </a>
+                        <?php endif; ?>
 
-                            <a
-                                class="px-5 py-2 text-[16px] hover:bg-gray-100 cursor-pointer"
-                                href="<?php echo e(route('shop.customers.account.orders.index')); ?>"
-                            >
-                                <?php echo app('translator')->get('shop::app.components.layouts.header.orders'); ?>
-                            </a>
-
-                            <?php if(core()->getConfigData('general.content.shop.wishlist_option')): ?>
-                                <a
-                                    class="px-5 py-2 text-[16px] hover:bg-gray-100 cursor-pointer"
-                                    href="<?php echo e(route('shop.customers.account.wishlist.index')); ?>"
-                                >
-                                    <?php echo app('translator')->get('shop::app.components.layouts.header.wishlist'); ?>
-                                </a>
-                            <?php endif; ?>
-
-                            
-                            <?php if(auth()->guard('customer')->check()): ?>
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        
+                        <?php if(auth()->guard('customer')->check()): ?>
+                            <?php if (isset($component)) { $__componentOriginal4d3fcee3e355fb6c8889181b04f357cc = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.form.index','data' => ['method' => 'DELETE','action' => ''.e(route('shop.customer.session.destroy')).'','id' => 'customerLogout']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::form'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -170,35 +161,54 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes(['method' => 'DELETE','action' => ''.e(route('shop.customer.session.destroy')).'','id' => 'customerLogout']); ?>
-                                 <?php echo $__env->renderComponent(); ?>
+                             <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc)): ?>
+<?php $attributes = $__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc; ?>
+<?php unset($__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal4d3fcee3e355fb6c8889181b04f357cc)): ?>
+<?php $component = $__componentOriginal4d3fcee3e355fb6c8889181b04f357cc; ?>
+<?php unset($__componentOriginal4d3fcee3e355fb6c8889181b04f357cc); ?>
 <?php endif; ?>
 
-                                <a
-                                    class="px-5 py-2 text-[16px] hover:bg-gray-100 cursor-pointer"
-                                    href="<?php echo e(route('shop.customer.session.destroy')); ?>"
-                                    onclick="event.preventDefault(); document.getElementById('customerLogout').submit();"
-                                >
-                                    <?php echo app('translator')->get('shop::app.components.layouts.header.logout'); ?>
-                                </a>
-                            <?php endif; ?>
-                        </div>
-                     <?php $__env->endSlot(); ?>
-                <?php endif; ?>
-             <?php echo $__env->renderComponent(); ?>
+                            <a
+                                class="px-5 py-2 text-[16px] hover:bg-gray-100 cursor-pointer"
+                                href="<?php echo e(route('shop.customer.session.destroy')); ?>"
+                                onclick="event.preventDefault(); document.getElementById('customerLogout').submit();"
+                            >
+                                <?php echo app('translator')->get('shop::app.components.layouts.header.logout'); ?>
+                            </a>
+                        <?php endif; ?>
+                    </div>
+                 <?php $__env->endSlot(); ?>
+            <?php endif; ?>
+         <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553)): ?>
+<?php $attributes = $__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553; ?>
+<?php unset($__attributesOriginal6eb652d0a4a36e6466d8d4f363feb553); ?>
 <?php endif; ?>
-        </div>
+<?php if (isset($__componentOriginal6eb652d0a4a36e6466d8d4f363feb553)): ?>
+<?php $component = $__componentOriginal6eb652d0a4a36e6466d8d4f363feb553; ?>
+<?php unset($__componentOriginal6eb652d0a4a36e6466d8d4f363feb553); ?>
+<?php endif; ?>
+        <?php echo $__env->make('shop::checkout.cart.mini-cart', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
     </div>
 </div>
 
-<?php if (! $__env->hasRenderedOnce('457f3881-27ad-4a35-96b4-932ed2d6aa88')): $__env->markAsRenderedOnce('457f3881-27ad-4a35-96b4-932ed2d6aa88');
+<div class="w-full flex justify-center items-center min-h-[78px] px-[60px]  max-1180:px-[30px]">
+    <v-desktop-category>
+        <div class="flex gap-[20px] items-center pb-[21px]">
+            <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
+            <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
+            <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
+        </div>
+    </v-desktop-category>
+</div>
+
+<?php if (! $__env->hasRenderedOnce('3bef074d-11b6-4793-8868-30a162ac10ec')): $__env->markAsRenderedOnce('3bef074d-11b6-4793-8868-30a162ac10ec');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-desktop-category-template">
         <div

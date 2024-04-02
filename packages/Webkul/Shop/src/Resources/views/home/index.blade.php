@@ -50,7 +50,7 @@
                     :src="route('shop.api.categories.index', $data['filters'] ?? [])"
                     :navigation-link="route('shop.home.index')"
                 >
-                </x-shop::categories.carousel>
+                </x-shop::categories.carous>
 
                 @break
 

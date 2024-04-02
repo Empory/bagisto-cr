@@ -3,10 +3,11 @@
     <span class="icon-cart text-[24px] cursor-pointer"></span>
 </v-mini-cart>
 
-<?php if (! $__env->hasRenderedOnce('fe77d9f8-ef90-4633-8312-3ffbffffc1c1')): $__env->markAsRenderedOnce('fe77d9f8-ef90-4633-8312-3ffbffffc1c1');
+<?php if (! $__env->hasRenderedOnce('d69705d8-43df-4fab-84e5-396fcf6bf0f0')): $__env->markAsRenderedOnce('d69705d8-43df-4fab-84e5-396fcf6bf0f0');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-mini-cart-template">
-        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+        <?php if (isset($component)) { $__componentOriginal2b3e2da8ab003ef79d854b1862e64fc8 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal2b3e2da8ab003ef79d854b1862e64fc8 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.drawer.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::drawer'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -37,9 +38,7 @@ $__env->startPush('scripts'); ?>
                     </p>
                 </div>
 
-                <p class="text-[16px]">
-                    <?php echo app('translator')->get('shop::app.checkout.cart.mini-cart.offer-on-orders'); ?>
-                </p>
+                
              <?php $__env->endSlot(); ?>
 
             <!-- Drawer Content -->
@@ -116,7 +115,8 @@ $__env->startPush('scripts'); ?>
                             <div class="flex gap-[20px] items-center flex-wrap">
 
                                 <!-- Cart Item Quantity Changer -->
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                <?php if (isset($component)) { $__componentOriginal6c50a43d549a14cd17ba26b5e08aa48c = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal6c50a43d549a14cd17ba26b5e08aa48c = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.quantity-changer.index','data' => ['name' => 'quantity',':value' => 'item?.quantity','class' => 'gap-x-[10px] max-w-[150px] max-h-[36px] py-[5px] px-[14px] rounded-[54px]','@change' => 'updateItem($event, item)']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::quantity-changer'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -127,9 +127,13 @@ $__env->startPush('scripts'); ?>
 <?php $component->withAttributes(['name' => 'quantity',':value' => 'item?.quantity','class' => 'gap-x-[10px] max-w-[150px] max-h-[36px] py-[5px] px-[14px] rounded-[54px]','@change' => 'updateItem($event, item)']); ?>
                                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal6c50a43d549a14cd17ba26b5e08aa48c)): ?>
+<?php $attributes = $__attributesOriginal6c50a43d549a14cd17ba26b5e08aa48c; ?>
+<?php unset($__attributesOriginal6c50a43d549a14cd17ba26b5e08aa48c); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal6c50a43d549a14cd17ba26b5e08aa48c)): ?>
+<?php $component = $__componentOriginal6c50a43d549a14cd17ba26b5e08aa48c; ?>
+<?php unset($__componentOriginal6c50a43d549a14cd17ba26b5e08aa48c); ?>
 <?php endif; ?>
 
                                 <!-- Cart Item Remove Button -->
@@ -194,9 +198,13 @@ $__env->startPush('scripts'); ?>
              <?php $__env->endSlot(); ?>
          <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal2b3e2da8ab003ef79d854b1862e64fc8)): ?>
+<?php $attributes = $__attributesOriginal2b3e2da8ab003ef79d854b1862e64fc8; ?>
+<?php unset($__attributesOriginal2b3e2da8ab003ef79d854b1862e64fc8); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal2b3e2da8ab003ef79d854b1862e64fc8)): ?>
+<?php $component = $__componentOriginal2b3e2da8ab003ef79d854b1862e64fc8; ?>
+<?php unset($__componentOriginal2b3e2da8ab003ef79d854b1862e64fc8); ?>
 <?php endif; ?>
     </script>
 

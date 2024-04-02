@@ -50,7 +50,8 @@
                         <?php echo app('translator')->get('shop::app.components.layouts.footer.subscribe-stay-touch'); ?>
                     </p>
 
-                    <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                    <?php if (isset($component)) { $__componentOriginal4d3fcee3e355fb6c8889181b04f357cc = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.form.index','data' => ['action' => route('shop.subscription.store'),'class' => 'mt-[10px] rounded max-sm:mt-[30px]']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::form'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -63,7 +64,8 @@
 
                         <div class="relative w-full">
 
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginal03b54b937596232babb8a12a8847d013 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal03b54b937596232babb8a12a8847d013 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.form.control-group.control','data' => ['type' => 'email','name' => 'email','class' => ' blockw-[420px] max-w-full px-[20px] py-[20px] pr-[110px] bg-[#F1EADF] border-[2px] border-[#E9DECC] rounded-[12px] text-xs font-medium max-1060:w-full','rules' => 'required|email','label' => 'Email','placeholder' => 'email@example.com']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::form.control-group.control'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -74,12 +76,17 @@
 <?php $component->withAttributes(['type' => 'email','name' => 'email','class' => ' blockw-[420px] max-w-full px-[20px] py-[20px] pr-[110px] bg-[#F1EADF] border-[2px] border-[#E9DECC] rounded-[12px] text-xs font-medium max-1060:w-full','rules' => 'required|email','label' => 'Email','placeholder' => 'email@example.com']); ?>
                          <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal03b54b937596232babb8a12a8847d013)): ?>
+<?php $attributes = $__attributesOriginal03b54b937596232babb8a12a8847d013; ?>
+<?php unset($__attributesOriginal03b54b937596232babb8a12a8847d013); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal03b54b937596232babb8a12a8847d013)): ?>
+<?php $component = $__componentOriginal03b54b937596232babb8a12a8847d013; ?>
+<?php unset($__componentOriginal03b54b937596232babb8a12a8847d013); ?>
 <?php endif; ?>
 
-                        <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                        <?php if (isset($component)) { $__componentOriginal72f1d7ac608c1db7c92b56fb85299dbf = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal72f1d7ac608c1db7c92b56fb85299dbf = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.form.control-group.error','data' => ['controlName' => 'email']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('shop::form.control-group.error'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -90,9 +97,13 @@
 <?php $component->withAttributes(['control-name' => 'email']); ?>
                          <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal72f1d7ac608c1db7c92b56fb85299dbf)): ?>
+<?php $attributes = $__attributesOriginal72f1d7ac608c1db7c92b56fb85299dbf; ?>
+<?php unset($__attributesOriginal72f1d7ac608c1db7c92b56fb85299dbf); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal72f1d7ac608c1db7c92b56fb85299dbf)): ?>
+<?php $component = $__componentOriginal72f1d7ac608c1db7c92b56fb85299dbf; ?>
+<?php unset($__componentOriginal72f1d7ac608c1db7c92b56fb85299dbf); ?>
 <?php endif; ?>
 
                             <button
@@ -104,9 +115,13 @@
                         </div>
                      <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc)): ?>
+<?php $attributes = $__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc; ?>
+<?php unset($__attributesOriginal4d3fcee3e355fb6c8889181b04f357cc); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal4d3fcee3e355fb6c8889181b04f357cc)): ?>
+<?php $component = $__componentOriginal4d3fcee3e355fb6c8889181b04f357cc; ?>
+<?php unset($__componentOriginal4d3fcee3e355fb6c8889181b04f357cc); ?>
 <?php endif; ?>
                 </div>
             <?php endif; ?>

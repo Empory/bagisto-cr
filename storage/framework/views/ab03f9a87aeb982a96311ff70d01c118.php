@@ -1,84 +1,15 @@
-<div class="flex justify-between items-center w-full py-[11px] px-16 border border-t-0 border-b-[1px] border-l-0 border-r-0">
+<div class="flex bg-headerBlack justify-between items-center w-full py-[11px] px-16 border border-t-0 border-b-[1px] border-l-0 border-r-0">
     
-    <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.dropdown.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
-<?php $component->withName('shop::dropdown'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag && $constructor = (new ReflectionClass(Illuminate\View\AnonymousComponent::class))->getConstructor()): ?>
-<?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
-<?php endif; ?>
-<?php $component->withAttributes([]); ?>
-        <!-- Dropdown Toggler -->
-         <?php $__env->slot('toggle', null, []); ?> 
-            <div class="flex gap-[10px] cursor-pointer">
-                <span>
-                    <?php echo e(core()->getCurrentCurrency()->symbol . ' ' . core()->getCurrentCurrencyCode()); ?>
 
-                </span>
-
-                <span class="text-[24px] icon-arrow-down"></span>
-            </div>
-         <?php $__env->endSlot(); ?>
-
-        <!-- Dropdown Content -->
-         <?php $__env->slot('content', null, ['class' => '!p-[0px]']); ?> 
-            <v-currency-switcher></v-currency-switcher>
-         <?php $__env->endSlot(); ?>
-     <?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
-<?php endif; ?>
-
-    <p class="text-xs font-medium">Get UPTO 40% OFF on your 1st order <a href="#" class="underline">SHOP NOW</a></p>
+    <p class="text-xs bg-headerBlack text-white text-center w-full font-medium">
+        Premium Handmade
+         
+        </p>
 
     
-    <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'shop::components.dropdown.index','data' => ['position' => 'bottom-right']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
-<?php $component->withName('shop::dropdown'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag && $constructor = (new ReflectionClass(Illuminate\View\AnonymousComponent::class))->getConstructor()): ?>
-<?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
-<?php endif; ?>
-<?php $component->withAttributes(['position' => 'bottom-right']); ?>
-         <?php $__env->slot('toggle', null, []); ?> 
-            
-            <div class="flex items-center gap-[10px] cursor-pointer">
-                <img 
-                    src="<?php echo e(! empty(core()->getCurrentLocale()->logo_url) 
-                            ? core()->getCurrentLocale()->logo_url 
-                            : bagisto_asset('images/default-language.svg')); ?>"
-                    class="h-full"
-                    alt="Default locale"
-                    width="24"
-                    height="16"
-                />
-                
-                <span>
-                    <?php echo e(core()->getCurrentChannel()->locales()->orderBy('name')->where('code', app()->getLocale())->value('name')); ?>
-
-                </span>
-
-                <span class="icon-arrow-down text-[24px]"></span>
-            </div>
-         <?php $__env->endSlot(); ?>
-    
-        <!-- Dropdown Content -->
-         <?php $__env->slot('content', null, ['class' => '!p-[0px]']); ?> 
-            <v-locale-switcher></v-locale-switcher>
-         <?php $__env->endSlot(); ?>
-     <?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
-<?php endif; ?>
 </div>
 
-<?php if (! $__env->hasRenderedOnce('ef0d29ff-3516-426a-8379-6f841f160f94')): $__env->markAsRenderedOnce('ef0d29ff-3516-426a-8379-6f841f160f94');
+<?php if (! $__env->hasRenderedOnce('253af86a-63d6-4057-bd96-1ab2361f918a')): $__env->markAsRenderedOnce('253af86a-63d6-4057-bd96-1ab2361f918a');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-currency-switcher-template">
         <div class="grid gap-[4px] mt-[10px] pb-[10px]">

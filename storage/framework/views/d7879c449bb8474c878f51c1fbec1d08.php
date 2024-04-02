@@ -23,7 +23,8 @@
     <?php echo e($attributes); ?>
 
 >
-    <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+    <?php if (isset($component)) { $__componentOriginald4a2ee3b74458b25b1bb9b9a154dc326 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginald4a2ee3b74458b25b1bb9b9a154dc326 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.shimmer.accordion.index','data' => ['class' => 'w-[360px] h-[271px]']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::shimmer.accordion'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -33,9 +34,13 @@
 <?php endif; ?>
 <?php $component->withAttributes(['class' => 'w-[360px] h-[271px]']); ?> <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginald4a2ee3b74458b25b1bb9b9a154dc326)): ?>
+<?php $attributes = $__attributesOriginald4a2ee3b74458b25b1bb9b9a154dc326; ?>
+<?php unset($__attributesOriginald4a2ee3b74458b25b1bb9b9a154dc326); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginald4a2ee3b74458b25b1bb9b9a154dc326)): ?>
+<?php $component = $__componentOriginald4a2ee3b74458b25b1bb9b9a154dc326; ?>
+<?php unset($__componentOriginald4a2ee3b74458b25b1bb9b9a154dc326); ?>
 <?php endif; ?>
 
     <?php if(isset($header)): ?>
@@ -55,7 +60,7 @@
     <?php endif; ?>
 </v-accordion>
 
-<?php if (! $__env->hasRenderedOnce('1f9e1a6c-afe4-40e6-a0cf-a82c095b05ea')): $__env->markAsRenderedOnce('1f9e1a6c-afe4-40e6-a0cf-a82c095b05ea');
+<?php if (! $__env->hasRenderedOnce('57f0011b-7781-4d10-b660-dc319bf18494')): $__env->markAsRenderedOnce('57f0011b-7781-4d10-b660-dc319bf18494');
 $__env->startPush('scripts'); ?>
     <script type="text/x-template" id="v-accordion-template">
         <div <?php echo e($attributes->merge(['class' => 'bg-white dark:bg-gray-900 rounded-[4px] box-shadow'])); ?>>

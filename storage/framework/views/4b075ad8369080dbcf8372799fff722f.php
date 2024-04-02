@@ -1,4 +1,5 @@
-<?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+<?php if (isset($component)) { $__componentOriginal3ad46025fb3e01e4c2eb9d1732f00674 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal3ad46025fb3e01e4c2eb9d1732f00674 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.layouts.anonymous','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::layouts.anonymous'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -23,7 +24,8 @@
 
             <div class="flex flex-col min-w-[300px] bg-white dark:bg-gray-900 rounded-[6px] box-shadow">
                 
-                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                <?php if (isset($component)) { $__componentOriginal81b4d293d9113446bb908fc8aef5c8f6 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal81b4d293d9113446bb908fc8aef5c8f6 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.index','data' => ['action' => route('admin.session.store')]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -41,7 +43,8 @@
                     <div class="p-[16px] border-t-[1px] border-b-[1px] dark:border-gray-800">
                         <div class="mb-[10px]">
                             
-                            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                            <?php if (isset($component)) { $__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -50,7 +53,8 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                <?php if (isset($component)) { $__componentOriginal8378211f70f8c39b16d47cecdac9c7c8 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.label','data' => ['class' => 'required']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group.label'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -62,12 +66,17 @@
                                     <?php echo app('translator')->get('admin::app.users.sessions.email'); ?>
                                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8)): ?>
+<?php $attributes = $__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8; ?>
+<?php unset($__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal8378211f70f8c39b16d47cecdac9c7c8)): ?>
+<?php $component = $__componentOriginal8378211f70f8c39b16d47cecdac9c7c8; ?>
+<?php unset($__componentOriginal8378211f70f8c39b16d47cecdac9c7c8); ?>
 <?php endif; ?>
 
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                <?php if (isset($component)) { $__componentOriginal53af403f6b2179a3039d488b8ab2a267 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal53af403f6b2179a3039d488b8ab2a267 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.control','data' => ['type' => 'email','name' => 'email','id' => 'email','class' => 'w-[254px] max-w-full','rules' => 'required|email','label' => trans('admin::app.users.sessions.email'),'placeholder' => trans('admin::app.users.sessions.email')]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group.control'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -78,12 +87,17 @@
 <?php $component->withAttributes(['type' => 'email','name' => 'email','id' => 'email','class' => 'w-[254px] max-w-full','rules' => 'required|email','label' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute(trans('admin::app.users.sessions.email')),'placeholder' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute(trans('admin::app.users.sessions.email'))]); ?>
                                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal53af403f6b2179a3039d488b8ab2a267)): ?>
+<?php $attributes = $__attributesOriginal53af403f6b2179a3039d488b8ab2a267; ?>
+<?php unset($__attributesOriginal53af403f6b2179a3039d488b8ab2a267); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal53af403f6b2179a3039d488b8ab2a267)): ?>
+<?php $component = $__componentOriginal53af403f6b2179a3039d488b8ab2a267; ?>
+<?php unset($__componentOriginal53af403f6b2179a3039d488b8ab2a267); ?>
 <?php endif; ?>
 
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                <?php if (isset($component)) { $__componentOriginal8da25fb6534e2ef288914e35c32417f8 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal8da25fb6534e2ef288914e35c32417f8 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.error','data' => ['controlName' => 'email']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group.error'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -94,21 +108,30 @@
 <?php $component->withAttributes(['control-name' => 'email']); ?>
                                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal8da25fb6534e2ef288914e35c32417f8)): ?>
+<?php $attributes = $__attributesOriginal8da25fb6534e2ef288914e35c32417f8; ?>
+<?php unset($__attributesOriginal8da25fb6534e2ef288914e35c32417f8); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal8da25fb6534e2ef288914e35c32417f8)): ?>
+<?php $component = $__componentOriginal8da25fb6534e2ef288914e35c32417f8; ?>
+<?php unset($__componentOriginal8da25fb6534e2ef288914e35c32417f8); ?>
 <?php endif; ?>
                              <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3)): ?>
+<?php $attributes = $__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3; ?>
+<?php unset($__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3)): ?>
+<?php $component = $__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3; ?>
+<?php unset($__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3); ?>
 <?php endif; ?>
                         </div>
 
                         
                         <div class="relative w-full">
-                            <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                            <?php if (isset($component)) { $__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.index','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -117,7 +140,8 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                <?php if (isset($component)) { $__componentOriginal8378211f70f8c39b16d47cecdac9c7c8 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.label','data' => ['class' => 'required']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group.label'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -129,12 +153,17 @@
                                     <?php echo app('translator')->get('admin::app.users.sessions.password'); ?>
                                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8)): ?>
+<?php $attributes = $__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8; ?>
+<?php unset($__attributesOriginal8378211f70f8c39b16d47cecdac9c7c8); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal8378211f70f8c39b16d47cecdac9c7c8)): ?>
+<?php $component = $__componentOriginal8378211f70f8c39b16d47cecdac9c7c8; ?>
+<?php unset($__componentOriginal8378211f70f8c39b16d47cecdac9c7c8); ?>
 <?php endif; ?>
                         
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                <?php if (isset($component)) { $__componentOriginal53af403f6b2179a3039d488b8ab2a267 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal53af403f6b2179a3039d488b8ab2a267 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.control','data' => ['type' => 'password','name' => 'password','id' => 'password','class' => 'w-[254px] max-w-full ltr:pr-10 rtl:pl-10','rules' => 'required|min:6','label' => trans('admin::app.users.sessions.password'),'placeholder' => trans('admin::app.users.sessions.password')]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group.control'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -145,9 +174,13 @@
 <?php $component->withAttributes(['type' => 'password','name' => 'password','id' => 'password','class' => 'w-[254px] max-w-full ltr:pr-10 rtl:pl-10','rules' => 'required|min:6','label' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute(trans('admin::app.users.sessions.password')),'placeholder' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute(trans('admin::app.users.sessions.password'))]); ?>
                                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal53af403f6b2179a3039d488b8ab2a267)): ?>
+<?php $attributes = $__attributesOriginal53af403f6b2179a3039d488b8ab2a267; ?>
+<?php unset($__attributesOriginal53af403f6b2179a3039d488b8ab2a267); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal53af403f6b2179a3039d488b8ab2a267)): ?>
+<?php $component = $__componentOriginal53af403f6b2179a3039d488b8ab2a267; ?>
+<?php unset($__componentOriginal53af403f6b2179a3039d488b8ab2a267); ?>
 <?php endif; ?>
                         
                                 <span 
@@ -157,7 +190,8 @@
                                 >
                                 </span>
                         
-                                <?php if (isset($component)) { $__componentOriginal71c6471fa76ce19017edc287b6f4508c = $component; } ?>
+                                <?php if (isset($component)) { $__componentOriginal8da25fb6534e2ef288914e35c32417f8 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal8da25fb6534e2ef288914e35c32417f8 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'admin::components.form.control-group.error','data' => ['controlName' => 'password']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
 <?php $component->withName('admin::form.control-group.error'); ?>
 <?php if ($component->shouldRender()): ?>
@@ -168,15 +202,23 @@
 <?php $component->withAttributes(['control-name' => 'password']); ?>
                                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal8da25fb6534e2ef288914e35c32417f8)): ?>
+<?php $attributes = $__attributesOriginal8da25fb6534e2ef288914e35c32417f8; ?>
+<?php unset($__attributesOriginal8da25fb6534e2ef288914e35c32417f8); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal8da25fb6534e2ef288914e35c32417f8)): ?>
+<?php $component = $__componentOriginal8da25fb6534e2ef288914e35c32417f8; ?>
+<?php unset($__componentOriginal8da25fb6534e2ef288914e35c32417f8); ?>
 <?php endif; ?>
                              <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3)): ?>
+<?php $attributes = $__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3; ?>
+<?php unset($__attributesOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3)): ?>
+<?php $component = $__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3; ?>
+<?php unset($__componentOriginal7b1bc76a00ab5e7f1bf2c6429dae85a3); ?>
 <?php endif; ?>
                         </div>
                     </div>
@@ -195,9 +237,13 @@
                     </div>
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal81b4d293d9113446bb908fc8aef5c8f6)): ?>
+<?php $attributes = $__attributesOriginal81b4d293d9113446bb908fc8aef5c8f6; ?>
+<?php unset($__attributesOriginal81b4d293d9113446bb908fc8aef5c8f6); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal81b4d293d9113446bb908fc8aef5c8f6)): ?>
+<?php $component = $__componentOriginal81b4d293d9113446bb908fc8aef5c8f6; ?>
+<?php unset($__componentOriginal81b4d293d9113446bb908fc8aef5c8f6); ?>
 <?php endif; ?>
             </div>
         </div>
@@ -216,7 +262,11 @@
     <?php $__env->stopPush(); ?>
  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal71c6471fa76ce19017edc287b6f4508c)): ?>
-<?php $component = $__componentOriginal71c6471fa76ce19017edc287b6f4508c; ?>
-<?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
+<?php if (isset($__attributesOriginal3ad46025fb3e01e4c2eb9d1732f00674)): ?>
+<?php $attributes = $__attributesOriginal3ad46025fb3e01e4c2eb9d1732f00674; ?>
+<?php unset($__attributesOriginal3ad46025fb3e01e4c2eb9d1732f00674); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal3ad46025fb3e01e4c2eb9d1732f00674)): ?>
+<?php $component = $__componentOriginal3ad46025fb3e01e4c2eb9d1732f00674; ?>
+<?php unset($__componentOriginal3ad46025fb3e01e4c2eb9d1732f00674); ?>
 <?php endif; ?><?php /**PATH C:\bagisto-cr\packages\Webkul\Admin\src/resources/views/users/sessions/create.blade.php ENDPATH**/ ?>

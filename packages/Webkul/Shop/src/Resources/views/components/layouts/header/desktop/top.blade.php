@@ -1,5 +1,5 @@
-<div class="flex justify-between items-center w-full py-[11px] px-16 border border-t-0 border-b-[1px] border-l-0 border-r-0">
-    {{-- Currency Switcher --}}
+<div class="flex bg-headerBlack justify-between items-center w-full py-[11px] px-16 border border-t-0 border-b-[1px] border-l-0 border-r-0">
+    {{-- Currency Switcher
     <x-shop::dropdown>
         <!-- Dropdown Toggler -->
         <x-slot:toggle>
@@ -16,14 +16,17 @@
         <x-slot:content class="!p-[0px]">
             <v-currency-switcher></v-currency-switcher>
         </x-slot:content>
-    </x-shop::dropdown>
+    </x-shop::dropdown> --}}
 
-    <p class="text-xs font-medium">Get UPTO 40% OFF on your 1st order <a href="#" class="underline">SHOP NOW</a></p>
+    <p class="text-xs bg-headerBlack text-white text-center w-full font-medium">
+        Premium Handmade
+         {{-- <a href="#" class="underline">SHOP NOW</a> --}}
+        </p>
 
-    {{-- Locales Switcher --}}
+    {{-- Locales Switcher
     <x-shop::dropdown position="bottom-right">
         <x-slot:toggle>
-            {{-- Dropdown Toggler --}}
+            Dropdown Toggler
             <div class="flex items-center gap-[10px] cursor-pointer">
                 <img 
                     src="{{ ! empty(core()->getCurrentLocale()->logo_url) 
@@ -48,7 +51,7 @@
         <x-slot:content class="!p-[0px]">
             <v-locale-switcher></v-locale-switcher>
         </x-slot:content>
-    </x-shop::dropdown>
+    </x-shop::dropdown> --}}
 </div>
 
 @pushOnce('scripts')
